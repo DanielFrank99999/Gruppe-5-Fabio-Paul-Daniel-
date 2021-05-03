@@ -1,0 +1,1 @@
+class L_ITEM extends ITEM{}

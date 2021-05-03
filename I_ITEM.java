@@ -1,0 +1,1 @@
+class I_ITEM extends ITEM{}

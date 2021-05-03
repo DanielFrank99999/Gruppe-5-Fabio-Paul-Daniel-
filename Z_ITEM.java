@@ -1,0 +1,1 @@
+class Z_ITEM extends ITEM{}

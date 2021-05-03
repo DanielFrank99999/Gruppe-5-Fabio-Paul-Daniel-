@@ -1,0 +1,1 @@
+class J_ITEM extends ITEM{}
