@@ -1,11 +1,3 @@
 
-public class Test
-{
-    
-    Test()
-    {
-        
-    }
-
-    
-    }
+public class Test{}
+  
