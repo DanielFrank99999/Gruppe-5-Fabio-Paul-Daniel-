@@ -1,1 +1,7 @@
-class Z_ITEM extends ITEM{}
+class Z_ITEM extends ITEM
+{
+    Z_ITEM()
+    {
+    
+    }
+}
