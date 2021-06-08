@@ -1,1 +1,7 @@
-class S_ITEM extends ITEM{}
+class S_ITEM extends ITEM
+{
+    S_ITEM()
+    {
+        
+    }
+}
