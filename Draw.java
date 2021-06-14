@@ -1,6 +1,8 @@
 import java.awt.*;
 import javax. swing. *;
-
+import java.awt.image.*;
+import javax.imageio.*;
+import java.io.*;
 public class Draw extends JLabel
 {
     protected void paintComponent(Graphics g){
@@ -13,6 +15,14 @@ public class Draw extends JLabel
         g.fillRect(0,550,600,800);
         g.setColor(Color.white);
         g.drawString(String.valueOf(Clock.temp),560,20);
+        BufferedImage photo = null;
+        try {
+            File file = new File("soundmatrix_start.png");
+            photo = ImageIO.read(file);
+        } catch (IOException e){
+            g.drawString("Problem reading the file", 100, 100);
+        }
+        g.drawImage(photo, 10, 10, 150, 225, null);
         repaint();
     }
 }
