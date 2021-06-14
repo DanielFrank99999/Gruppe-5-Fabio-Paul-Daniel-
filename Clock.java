@@ -1,16 +1,15 @@
 import java.util.*;
 public class Clock
 {
-    int temp;
+    static int temp;
     Clock()
     {
         temp = 0;
-        new SwingFenster();
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask()   
     {
         @Override
-    public void run(){System.out.println(temp);
+    public void run(){
     temp++;}},0,300);
     }
 }
