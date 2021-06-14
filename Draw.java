@@ -22,7 +22,7 @@ public class Draw extends JLabel
         } catch (IOException e){
             g.drawString("Problem reading the file", 100, 100);
         }
-        g.drawImage(photo, 10, 10, 150, 225, null);
+        g.drawImage(photo, 10,50,565,550, null);
         repaint();
     }
 }
