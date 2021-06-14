@@ -8,7 +8,7 @@ public class Draw extends JLabel
         g.fillRect(0,0,600,800);
         g.setColor(Color.white);
         g.drawString(String.valueOf(Clock.temp),20,20);
-        g.fillRect(100,100,400,600);
+        g.fillRect(95,250,400,400);
         repaint();
-    }
+    } 
 }

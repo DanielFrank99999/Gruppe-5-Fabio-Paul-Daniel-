@@ -10,6 +10,6 @@ public class Clock
     {
         @Override
     public void run(){
-    temp++;}},0,300);
+    temp++;}},0,999);
     }
 }
