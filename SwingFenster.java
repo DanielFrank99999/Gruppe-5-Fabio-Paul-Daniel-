@@ -4,8 +4,6 @@ public class SwingFenster
     public static void main(String[] args)
     {
         JFrame fenster = new JFrame();
-        fenster.setSize(600, 400);
-        fenster.setVisible(true);
 
         fenster.setSize(600, 800);
         fenster.setVisible(true);
