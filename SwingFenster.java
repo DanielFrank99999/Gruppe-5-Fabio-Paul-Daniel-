@@ -4,7 +4,7 @@ public class SwingFenster
     public static void main(String[] args)
     {
         JFrame fenster = new JFrame();
-
+        
         fenster.setSize(600, 800);
         fenster.setVisible(true);
         fenster.setTitle("Tetris");
@@ -16,5 +16,6 @@ public class SwingFenster
         draw.setBounds(0,0,600,800);
         fenster.add(draw);
         new Clock();
+        
     }
 }
