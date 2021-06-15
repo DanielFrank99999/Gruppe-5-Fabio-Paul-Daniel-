@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-public class SwingFenster
+public class SPIELFELD
 {
     public static void main(String[] args)
     {
