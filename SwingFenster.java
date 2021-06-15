@@ -16,6 +16,5 @@ public class SwingFenster
         draw.setBounds(0,0,600,800);
         fenster.add(draw);
         new Clock();
-
     }
 }
