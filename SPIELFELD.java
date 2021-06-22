@@ -1,6 +1,9 @@
 import javax.swing.JFrame;
 public class SPIELFELD
 {
+    private static final int rasterGroesse = 30;
+    private static final int hoeheFenster = rasterGroesse * 20;
+    private static final int breiteFenster = rasterGroesse * 26;
     public static void main(String[] args)
     {
         JFrame fenster = new JFrame();
