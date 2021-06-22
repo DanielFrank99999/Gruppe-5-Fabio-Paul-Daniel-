@@ -32,6 +32,15 @@ public class Draw extends JLabel
         g.fillRect(233,50,5,550);
         g.fillRect(266,50,5,550);
         g.fillRect(300,50,5,550);
+        g.fillRect(333,50,5,550);
+        g.fillRect(366,50,5,550);
+        g.fillRect(400,50,5,550);
+        g.fillRect(433,50,5,550);
+        g.fillRect(466,50,5,550);
+        g.fillRect(500,50,5,550);
+        g.fillRect(533,50,5,550);
+        g.fillRect(566,50,5,550);
+        
         repaint();
     } 
 }
