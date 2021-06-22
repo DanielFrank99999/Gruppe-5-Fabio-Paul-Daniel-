@@ -6,9 +6,9 @@ alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar
 zumindest die folgenden Angaben umfassen:
 ------------------------------------------------------------------------
 
-PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:
-VERSION oder DATUM:
-WIE IST DAS PROJEKT ZU STARTEN:
-AUTOR(EN):
+PROJEKTBEZEICHNUNG: Tetris
+PROJEKTZWECK: Schulprojekt
+VERSION oder DATUM: 
+WIE IST DAS PROJEKT ZU STARTEN: Über SwingFenster
+AUTOR(EN): Daniel,Fabio,Paul
 BENUTZERHINWEISE:
