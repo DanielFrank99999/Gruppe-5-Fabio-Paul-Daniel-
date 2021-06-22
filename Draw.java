@@ -40,6 +40,7 @@ public class Draw extends JLabel
         g.fillRect(500,50,5,550);
         g.fillRect(533,50,5,550);
         g.fillRect(566,50,5,550);
+
         
         repaint();
     } 
