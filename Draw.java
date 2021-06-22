@@ -23,24 +23,6 @@ public class Draw extends JLabel
             g.drawString("Problem reading the file", 100, 100);
         }
         g.drawImage(photo, 10,50,565,550, null);
-        g.fillRect(33,50,5,550);
-        g.fillRect(66,50,5,550);
-        g.fillRect(100,50,5,550);
-        g.fillRect(133,50,5,550);
-        g.fillRect(166,50,5,550);
-        g.fillRect(200,50,5,550);
-        g.fillRect(233,50,5,550);
-        g.fillRect(266,50,5,550);
-        g.fillRect(300,50,5,550);
-        g.fillRect(333,50,5,550);
-        g.fillRect(366,50,5,550);
-        g.fillRect(400,50,5,550);
-        g.fillRect(433,50,5,550);
-        g.fillRect(466,50,5,550);
-        g.fillRect(500,50,5,550);
-        g.fillRect(533,50,5,550);
-        g.fillRect(566,50,5,550);
-
         
         repaint();
     } 
