@@ -5,8 +5,8 @@ abstract class ITEM
    char fall;
    ITEM()
    {
-       positionX = 1;
-       positionY = 1;
+       positionX = 300;
+       positionY = 0;
        Runterfallen ();
        fall = 'O';
    } 

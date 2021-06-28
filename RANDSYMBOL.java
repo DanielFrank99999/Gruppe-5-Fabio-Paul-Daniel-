@@ -1,7 +1,5 @@
-
 import java.awt.*;
 import javax. swing. *;
-
 /**
  * Der Rand um das Spielfeld.
  * Das Fenster wird bei Bedarf generiert.
@@ -24,7 +22,6 @@ class RANDSYMBOL
     private int punkte = 0;
     private boolean endemeldungGesetzt;
     private String endeMeldung = "";
-
     /**
      * Standardkonstruktor für Objekte der Klasse RANDSYMBOL.
      * Er erzeugt einen grauen Rand um das Spielfeld.
