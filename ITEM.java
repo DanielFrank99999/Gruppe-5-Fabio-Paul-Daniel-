@@ -1,1 +1,9 @@
-class ITEM{}
+abstract class ITEM
+{
+   ITEM()
+   {
+
+   } 
+   
+   
+}

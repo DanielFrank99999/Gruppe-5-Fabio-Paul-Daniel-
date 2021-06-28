@@ -1,10 +1,12 @@
 import javax.swing.JFrame;
+import java.awt.*;
+import javax. swing. *;
 public class SPIELFELD
 {
     public static void main(String[] args)
     {
         JFrame fenster = new JFrame();
-
+        
         fenster.setSize(600, 800);
         fenster.setVisible(true);
         fenster.setTitle("Tetris");
@@ -16,5 +18,41 @@ public class SPIELFELD
         draw.setBounds(0,0,600,800);
         fenster.add(draw);
         new Clock();
+    }
+    
+    static JFrame FensterGeben ()
+    {
+        if (o == null)
+        {
+            o = new SPIELFELD ();
+        }
+        return o. fenster;
+    }
+
+    /**
+     * Gibt die Rastergröße zurück.
+     * @return Ausgabefenster
+     */
+    static int RasterGroesseGeben ()
+    {
+        return rasterGroesse;
+    }
+
+    /**
+     * Gibt die Breite des Fensters zurück.
+     * @return Fensterbreite
+     */
+    static int FensterBreiteGeben ()
+    {
+        return breiteFenster;
+    }
+
+    /**
+     * Gibt die Höhe des Fensters zurück.
+     * @return Fensterhöhe
+     */
+    static int FensterHoeheGeben ()
+    {
+        return hoeheFenster;
     }
 }
