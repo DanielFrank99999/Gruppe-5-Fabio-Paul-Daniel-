@@ -3,22 +3,21 @@ import java.awt.*;
 import javax. swing. *;
 public class SPIELFELD
 {
-    private static final int rasterGroesse = 30;
-    private static final int hoeheFenster = rasterGroesse * 20;
-    private static final int breiteFenster = rasterGroesse * 26;
+    private static final int rasterGroesse = 35;
+    private static final int hoeheFenster = rasterGroesse * 16;
+    private static final int breiteFenster = rasterGroesse * 16;
     private static SPIELFELD o = null;
     private JFrame fenster = null;
     public static void main(String[] args)
     {
         JFrame fenster = new JFrame();
-        
         fenster.setSize(600, 800);
         fenster.setVisible(true);
         fenster.setTitle("Tetris");
         fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fenster.setResizable(false);
-                fenster.setLayout(null);
-                fenster.setLocationRelativeTo(null);
+        fenster.setLayout(null);
+        fenster.setLocationRelativeTo(null);
         Draw draw = new Draw();
         draw.setBounds(0,0,600,800);
         fenster.add(draw);
