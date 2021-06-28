@@ -11,10 +11,11 @@ public class SPIELFELD extends ITEM
    private static final int breiteFenster = rasterGroesse * 16;
    private static SPIELFELD o = null;
    private JFrame fenster = null;
-   int positionX;
-   int positionY;
-   char fall;
-   public static void main(String[] args)
+   static int positionX;
+   static int positionY;
+   static char fall;
+   
+   public SPIELFELD ()
    {
         JFrame fenster = new JFrame();
         fenster.setSize(600, 800);
@@ -72,10 +73,9 @@ public class SPIELFELD extends ITEM
    
    public static void main(String[] args)
    {
-        java.util.List<String> someList = someMethod();  
         int min = 1;
-        int max = 10;
-        for(int i = 1; i <=10; i++) 
+        int max = 7;
+        for(int i = 1; i <=7; i++) 
         {
             int getRandomValue = ThreadLocalRandom.current().nextInt(min, max) + min;
 
@@ -84,28 +84,29 @@ public class SPIELFELD extends ITEM
    }
    void Runterfallen ()
    {
+       int getRandomValue = ThreadLocalRandom.current().nextInt(0, 7) + 1;
        switch ( fall )
        {
-           case 'O':
-                o_item = new ITEM();
+           case '1':
+                ITEM o_item = new ITEM();
                 break;
-           case 'L':
-                l_item = new ITEM();
+           case '2':
+                ITEM l_item = new ITEM();
                 break;
-           case 'S':
-                s_item = new ITEM();
+           case '3':
+                ITEM s_item = new ITEM();
                 break;
-           case 'I':
-                i_item = new ITEM();
+           case '4':
+                ITEM i_item = new ITEM();
                 break;
-           case 'Z':
-                z_item = new ITEM();
+           case '5':
+                ITEM z_item = new ITEM();
                 break;
-           case 'T':
-                t_item = new ITEM();
+           case '6':
+                ITEM t_item = new ITEM();
                 break;
-           case 'J':
-                j_item = new ITEM();
+           case '7':
+                ITEM j_item = new ITEM();
                 break;
        }
    }
