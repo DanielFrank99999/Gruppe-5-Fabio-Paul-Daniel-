@@ -4,6 +4,7 @@ abstract class ITEM extends Draw
    int positionX;
    int positionY;
    char fall;
+   
    ITEM()
    {
        positionX = 1;
