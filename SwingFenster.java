@@ -10,8 +10,8 @@ public class SwingFenster
         fenster.setTitle("Tetris");
         fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fenster.setResizable(false);
-                fenster.setLayout(null);
-                fenster.setLocationRelativeTo(null);
+        fenster.setLayout(null);
+        fenster.setLocationRelativeTo(null);
         Draw draw = new Draw();
         draw.setBounds(0,0,600,800);
         fenster.add(draw);

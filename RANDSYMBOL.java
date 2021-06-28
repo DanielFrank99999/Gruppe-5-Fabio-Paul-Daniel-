@@ -48,7 +48,8 @@ class RANDSYMBOL
         wertGesetzt = false;
         endemeldungGesetzt = false;
         fenster = SPIELFELD. FensterGeben ();
-        anzeige = new JComponent () {
+        anzeige = new JComponent () 
+        {
             // Stellt das Rumpfelement auf dem Fenster dar.
             public void paintComponent (Graphics g)
             {
@@ -104,7 +105,7 @@ class RANDSYMBOL
             yMin = -yMax - 2;
         }
         anzeige. setSize ((breite+2)*groesse, (hoehe+2)*groesse);
-        anzeige. setLocation (SPIELFELD. FensterBreiteGeben () / 2 - (breite / 2 + 1 + breite % 2) * groesse, OBERFLAECHE. FensterHoeheGeben () / 2 - (hoehe / 2 + 1 + hoehe % 2) * groesse);
+        anzeige. setLocation (SPIELFELD. FensterBreiteGeben () / 2 - (breite / 2 + 1 + breite % 2) * groesse, SPIELFELD. FensterHoeheGeben () / 2 - (hoehe / 2 + 1 + hoehe % 2) * groesse);
     }
 
     /**
