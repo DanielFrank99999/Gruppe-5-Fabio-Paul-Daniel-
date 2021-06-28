@@ -40,5 +40,5 @@ public class Draw extends JLabel
              g. drawLine (breiteFenster / 2, 0, breiteFenster / 2, hoeheFenster - 1);
                 }
         repaint();
-    } 
+    }
 }
