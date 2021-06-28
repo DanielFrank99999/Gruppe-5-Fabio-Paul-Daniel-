@@ -6,9 +6,9 @@ abstract class ITEM extends Draw
    char fall;
    ITEM()
    {
-      positionX = 300;
-      positionY = 0;
-      Runterfallen ();
-      fall = 'O';
+     positionX = 300;
+     positionY = 0;
+     Runterfallen ();
+     fall = 'O';
    } 
 }
