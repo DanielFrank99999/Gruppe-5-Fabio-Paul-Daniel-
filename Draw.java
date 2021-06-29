@@ -19,6 +19,7 @@ public class Draw extends JLabel
         g.fillRect(575,0,600,800);
         g.fillRect(0,550,600,800);
         g.setColor(Color.white);
+        
         g.drawString(String.valueOf(Clock.temp),560,20);
         BufferedImage photo = null;
         try {
