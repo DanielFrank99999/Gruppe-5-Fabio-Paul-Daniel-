@@ -14,7 +14,7 @@ public class SPIELFELD extends ITEM
    static int positionX;
    static int positionY;
    static char fall;
-   
+   ITEM item;
    public static void main(String[] args)
    {
         JFrame fenster = new JFrame();
@@ -33,6 +33,7 @@ public class SPIELFELD extends ITEM
         positionY = 1;
         //Runterfallen ();
         fall = 'O';
+        ITEM item = new ITEM();
    }
     
    static JFrame FensterGeben ()
