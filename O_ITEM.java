@@ -12,7 +12,7 @@ class O_ITEM extends JLabel
         
     }
     protected void paintComponent(Graphics g){
-        g.fillRect(0,0,50,50);
+        g.fillRect(0,0,550,50);
         
         
     }
