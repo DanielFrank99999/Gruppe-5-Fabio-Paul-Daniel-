@@ -5,8 +5,6 @@ import javax. swing. *;
 class O_ITEM extends ITEM
 {
     private static final int groesse = SPIELFELD. RasterGroesseGeben ();
-
-    /** Interna */
     private int x;
     private int y;
     private JComponent anzeige;

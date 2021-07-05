@@ -1,8 +1,8 @@
 import java.awt.*;
 import javax. swing. *;
-public class ITEM extends Draw
+public class ITEM 
 {
-    private static final int groesse = SPIELFELD. RasterGroesseGeben ();
+    private static final int groesse = SPIELFELD.RasterGroesseGeben();
 
     /** Interna */
     private int x;
