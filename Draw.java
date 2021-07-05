@@ -10,6 +10,7 @@ public class Draw extends JLabel
     private static final int breiteFenster = rasterGroesse * 16;
     private static Draw o = null;
     private JFrame fenster = null;
+    O_ITEM o_item;
     protected void paintComponent(Graphics g){
         g.setColor(Color.black);
         g.fillRect(0,0,600,800);
@@ -43,7 +44,7 @@ public class Draw extends JLabel
              g. drawLine (breiteFenster / 2, 0, breiteFenster / 2, hoeheFenster - 1);
                 }
         repaint();
-
+        o_item = new O_ITEM();
 
     }
     
