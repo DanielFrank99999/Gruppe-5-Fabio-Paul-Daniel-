@@ -5,44 +5,35 @@ import javax.imageio.*;
 import java.io.*;
 public class Draw extends JLabel
 {
-    private static final int rasterGroesse = 35;
-    private static final int hoeheFenster = rasterGroesse * 16;
+    private static final int rasterGroesse = 40;
+    private static final int hoeheFenster = rasterGroesse * 15;
     private static final int breiteFenster = rasterGroesse * 16;
     private static Draw o = null;
     private JFrame fenster = null;
     O_ITEM o_item;
+    
     protected void paintComponent(Graphics g){
-        g.setColor(Color.black);
-        g.fillRect(0,0,600,800);
-        g.setColor(Color.gray);
-        g.fillRect(0,0,600,50);
-        g.fillRect(0,0,10,800);
-        g.fillRect(575,0,600,800);
-        g.fillRect(0,550,600,800);
-        g.setColor(Color.white);
-        
-        g.drawString(String.valueOf(Clock.temp),560,20);
-        BufferedImage photo = null;
-        try {
-            File file = new File("soundmatrix_start.png");
-            photo = ImageIO.read(file);
-        } catch (IOException e){
-            g.drawString("Problem reading the file", 100, 100);
-        }
-        g.drawImage(photo,10,50,565,550, null);
+        // g.setColor(Color.black);
+        // g.fillRect(0,0,600,800);
+        // g.setColor(Color.gray);
+        // g.fillRect(0,0,600,50);
+        // g.fillRect(0,0,10,800);
+        // g.fillRect(575,0,600,800);
+        // g.fillRect(0,550,600,800);
+         g.setColor(Color.BLACK);
+        g.drawString(String.valueOf(Clock.temp),560,20);       
+        g.setColor(Color.BLACK);
+        g.fillRect(10, 40, 560,560);
         g. setColor (Color. lightGray);
-        for (int i = 1; i <= hoeheFenster / (rasterGroesse * 2); i++)
-        {
-             g. drawLine (0, hoeheFenster / 2 + i * rasterGroesse, breiteFenster - 1, hoeheFenster / 2 + i * rasterGroesse);
-             g. drawLine (0, hoeheFenster / 2 - i * rasterGroesse, breiteFenster - 1, hoeheFenster / 2 - i * rasterGroesse);
-             g. drawLine (0, hoeheFenster / 2, breiteFenster - 1, hoeheFenster / 2);
+        for (int i = 0; i < 15; i++) {
+            g.drawLine(10, 0 + i * rasterGroesse, 570, 0 + i * rasterGroesse);
+            g.drawLine(rasterGroesse * i + 10, 40, rasterGroesse * i + 10, 600);
         }
-        for (int i = 1; i <= breiteFenster / (rasterGroesse * 2); i++)
-        {
-             g. drawLine (breiteFenster / 2 + i * rasterGroesse, 0, breiteFenster / 2 + i * rasterGroesse, hoeheFenster - 1);
-             g. drawLine (breiteFenster / 2 - i * rasterGroesse, 0, breiteFenster / 2 - i * rasterGroesse, hoeheFenster - 1);
-             g. drawLine (breiteFenster / 2, 0, breiteFenster / 2, hoeheFenster - 1);
-                }
+        for (int i= 0; i < 14; i++){
+            for (int j= 0; j < 14; j++){
+                g.fillRect(rasterGroesse * j + 15, i * rasterGroesse + 45, 30, 30);
+            }
+        }
         repaint();
         o_item = new O_ITEM();
 
