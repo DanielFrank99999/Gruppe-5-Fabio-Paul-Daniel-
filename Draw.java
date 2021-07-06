@@ -15,18 +15,18 @@ public class Draw extends JLabel
     protected void paintComponent(Graphics g){
         // g.setColor(Color.black);
         // g.fillRect(0,0,600,800);
-        // g.setColor(Color.gray);
-        // g.fillRect(0,0,600,50);
-        // g.fillRect(0,0,10,800);
-        // g.fillRect(575,0,600,800);
-        // g.fillRect(0,550,600,800);
-         g.setColor(Color.BLACK);
+        g.setColor(Color.gray);
+        g.fillRect(0,0,600,50);
+        g.fillRect(0,0,10,800);
+        g.fillRect(575,0,600,800);
+        g.fillRect(0,550,600,800);
+         g.setColor(Color.white);
         g.drawString(String.valueOf(Clock.temp),560,20);       
         g.setColor(Color.BLACK);
         g.fillRect(10, 40, 560,560);
         g. setColor (Color. lightGray);
         for (int i = 0; i < 15; i++) {
-            g.drawLine(10, 0 + i * rasterGroesse, 570, 0 + i * rasterGroesse);
+            g.drawLine(10, 40 + i * rasterGroesse, 570, 40 + i * rasterGroesse);
             g.drawLine(rasterGroesse * i + 10, 40, rasterGroesse * i + 10, 600);
         }
         for (int i= 0; i < 14; i++){
