@@ -14,8 +14,15 @@ public class SPIELFELD extends ITEM
    static int positionX;
    static int positionY;
    static char fall;
-   ITEM item;
-   public static void main(String[] args)
+   O_ITEM o_item;
+   I_ITEM i_item;
+   J_ITEM j_item;
+   Z_ITEM z_item;
+   T_ITEM t_item;
+   S_ITEM s_item;
+   L_ITEM l_item;
+   
+    public static void main(String[] args)
    {
         JFrame fenster = new JFrame();
         fenster.setSize(600, 800);
@@ -31,9 +38,16 @@ public class SPIELFELD extends ITEM
         new Clock();
         positionX = 1;  
         positionY = 1;
-        //Runterfallen ();
         fall = 'O';
-        ITEM item = new ITEM();
+        int min = 1;
+        int max = 7;
+        Runterfallen();
+        for(int i = 1; i <=7; i++) 
+        {
+            int getRandomValue = ThreadLocalRandom.current().nextInt(min, max) + min;
+
+            System.out.println(getRandomValue);
+        }
    }
     
    static JFrame FensterGeben ()
@@ -72,42 +86,32 @@ public class SPIELFELD extends ITEM
         return hoeheFenster;
    }
    
-   //public static void main(String[] args)
-   //{
-        //int min = 1;
-        //int max = 7;
-        //for(int i = 1; i <=7; i++) 
-        //{
-            //int getRandomValue = ThreadLocalRandom.current().nextInt(min, max) + min;
-
-            //System.out.println(getRandomValue);
-        //}
-   //}
-   //void Runterfallen ()
-   //{
-       //int getRandomValue = ThreadLocalRandom.current().nextInt(0, 7) + 1;
-       //switch ( fall )
-       //{
-           //case '1':
-                //ITEM o_item = new ITEM();
-                //break;
-           //case '2':
-                //ITEM l_item = new ITEM();
-                //break;
-           //case '3':
-                //ITEM s_item = new ITEM();
-                //break;
-           //case '4':
-                //ITEM i_item = new ITEM();
-                //break;
-           //case '5':
-                //ITEM z_item = new ITEM();
-                //break;
-           //case '6':
-                //ITEM t_item = new ITEM();
-                //break;
-           //case '7':
-                //ITEM j_item = new ITEM();
-                //break;
-       //}
+    static void Runterfallen ()
+   {
+       int getRandomValue = ThreadLocalRandom.current().nextInt(0, 7) + 1;
+       switch ( fall )
+       {
+           case '1':
+                ITEM o_item = new ITEM();
+                break;
+           case '2':
+                ITEM l_item = new ITEM();
+                break;
+           case '3':
+                ITEM s_item = new ITEM();
+                break;
+           case '4':
+                ITEM i_item = new ITEM();
+                break;
+           case '5':
+                ITEM z_item = new ITEM();
+                break;
+            case '6':
+                ITEM t_item = new ITEM();
+                break;
+           case '7':
+                ITEM j_item = new ITEM();
+                break;
+       }
    }
+}
