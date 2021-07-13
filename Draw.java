@@ -13,8 +13,6 @@ public class Draw extends JLabel
     O_ITEM o_item;
     
     protected void paintComponent(Graphics g){
-        // g.setColor(Color.black);
-        // g.fillRect(0,0,600,800);
         g.setColor(Color.gray);
         g.fillRect(0,0,600,800);
          g.setColor(Color.white);
